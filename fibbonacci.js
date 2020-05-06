@@ -1,4 +1,16 @@
+// FIBBONACCI FUNCTION IN ACTION
+const submitbtn =document.getElementById("submit");
+submitbtn.addEventListener("click", () => {
+    let count = document.getElementById("input").value;
+    let fib = [0, 1];
+    for (let i = fib.length; i < count; i++) {
+        fib[i] = fib[i - 2] + fib[i - 1];
+    }
+    console.log(fib);
+});
 
+
+// FIBBONACCI FUNCTION
 function fibonacci(count) {
     let fib = [];
     fib[0] = 0;
@@ -19,10 +31,5 @@ function fibonacci(count) {
 }
 fibonacci(3);
 
-//    function fibonacci(n) {
-//     return n < 1 ? 0
-//          : n <= 2 ? 1
-//          : fibonacci(n - 1) + fibonacci(n - 2);
-//  }
 
-//  console.log(fibonacci(4));
+
